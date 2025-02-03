@@ -1,9 +1,5 @@
-# WORKSHOP-3.1
-Here's the updated README with the required formatting:
-WS3 Project - New Zealand Birds Collage
-Link to Repository
-
-### https://github.com/adra086/WORKSHOP-3.1/
+# WORKSHOP-3.1 New Zealand Birds Collageoje
+Link to Repository: https://github.com/adra086/WORKSHOP-3.1/
 
 ## Project Description
 
