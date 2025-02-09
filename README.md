@@ -120,11 +120,12 @@ function mousePressed() {
 
     1. Inital Layout - first effect
     
-    ![image](https://github.com/user-attachments/assets/5ddd32f9-18ef-4d04-a281-1c334ed7bbae)
+   ![image](https://github.com/user-attachments/assets/1a5b5723-2702-4cf2-ad75-3b2d50d95ac1)
 
     2. Dynamic Collage after applying effects like grayscale, blur, and posterize
     
-    ![image](https://github.com/user-attachments/assets/55a37719-e266-4e4d-abbb-56d3a2ccb278)
+  ![image](https://github.com/user-attachments/assets/02ee4822-8e16-468e-bbfc-2029b6fe6c8e)
+
 
 ## Problem-Solving and Feedback
 
@@ -139,7 +140,8 @@ function mousePressed() {
     I resolved this by using createGraphics() to apply effects only to individual images, leaving the text unaffected.
     I specified postions for each image in a grid formation so it was like this: 
     
-    ![image](https://github.com/user-attachments/assets/406be518-9501-4b6f-90cf-8daa136b8dd2)
+![image](https://github.com/user-attachments/assets/2a14c73e-9d66-48ea-bf24-00dd00c3b439)
+
 
 
 ### Feedback Implemented
