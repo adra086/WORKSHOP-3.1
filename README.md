@@ -3,7 +3,9 @@ Link to Repository: https://github.com/adra086/WORKSHOP-3.1/
 
 ## Project Description
 
-This project creates a collage of 10 images of New Zealand birds arranged dynamically around a centered title, "New Zealand Birds." Each time you click the mouse, a new random collage is generated with dynamic effects applied to the images, such as grayscale, blur, posterize, and overlays. The centered text is unaffected by any filters to maintain its clarity.
+This project creates a collage of 10 images of New Zealand birds arranged dynamically around a centered title, "New Zealand Birds." 
+Each time you click the mouse, a new random collage is generated with dynamic effects applied to the images, such as grayscale, blur, posterize, and overlays. 
+The centered text is unaffected by any filters to maintain its clarity.
 
 ## Tasks Overview
 
@@ -33,6 +35,7 @@ This project creates a collage of 10 images of New Zealand birds arranged dynami
 ## Code Explanation
 1. Loading Images
 
+``` javascript
 let images = [];
 let numImages = 10;
 
@@ -41,11 +44,13 @@ function preload() {
     images.push(loadImage(`images/bird${i}.jpg`));
   }
 }
+```
 
     The images are loaded using the preload() function to ensure they are ready before the canvas is created.
 
 2. Centered Text
 
+``` javascript
 function drawCenteredText() {
   push();
   textAlign(CENTER, CENTER);
@@ -56,11 +61,13 @@ function drawCenteredText() {
   text("New Zealand Birds", width / 2, height / 2);
   pop();
 }
+```
 
     The title "New Zealand Birds" is centered using textAlign() and drawn without any filters.
 
 3. Dynamic Collage with Random Effects
 
+``` javascript
 function generateCollage() {
   positions = [];
   effects = [];
@@ -95,28 +102,27 @@ function generateCollage() {
     positions.push({ x: gridPositions[i].x - w / 2, y: gridPositions[i].y - h / 2, w: w, h: h });
   }
 }
+```
 
     This function arranges the images around the centered text and applies random effects to each image using createGraphics().
 
 ## 4. Interactive Collage Updates
 
+``` javascript
 function mousePressed() {
   generateCollage();  // Generate a new layout with random effects
   redraw();
 }
-
+```
     A new random collage with different effects is generated each time the mouse is clicked.
 
 ## Project Screenshots
-Screenshots to Include:
 
     1. Inital Layout - first effect
     ![image](https://github.com/user-attachments/assets/5ddd32f9-18ef-4d04-a281-1c334ed7bbae)
 
     2. Dynamic Collage after applying effects like grayscale, blur, and posterize
     ![image](https://github.com/user-attachments/assets/55a37719-e266-4e4d-abbb-56d3a2ccb278)
-
-(Take screenshots of these examples and insert them here.)
 
 ## Problem-Solving and Feedback
 
